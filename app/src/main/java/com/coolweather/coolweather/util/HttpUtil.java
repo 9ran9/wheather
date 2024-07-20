@@ -12,5 +12,4 @@ public class HttpUtil {
         Request request = new Request.Builder().url(address).build(); //访问对应网址
         client.newCall(request).enqueue(callback); //callback：回调，类似按钮作用
     }
-
 }

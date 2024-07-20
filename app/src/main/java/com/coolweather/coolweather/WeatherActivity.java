@@ -34,8 +34,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -128,6 +126,7 @@ public class WeatherActivity extends AppCompatActivity {
         }else {
             Tool.logd("加载背景图片");
             getImage();
+            
         }
 
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -140,8 +139,9 @@ public class WeatherActivity extends AppCompatActivity {
         navButton.setOnClickListener(v->{
             drawerLayout.openDrawer(GravityCompat.START);
         });
-    }
 
+
+    }
 
 
     //加载对应图片

@@ -18,6 +18,8 @@ import java.util.List;
 //具体每一阶层所使用的对应工具：
 public class Utility {  //Utility:效用，实用工具
 
+
+
     /**
      *将返回的JSON解析为Weather因为对应格式处理好了，直接调用Gson的fromJson方法。
      */
